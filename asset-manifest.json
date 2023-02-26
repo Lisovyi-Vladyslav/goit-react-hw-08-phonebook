@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/goit-react-hw-08-phonebook/static/css/main.7acaea2f.css",
-    "main.js": "/goit-react-hw-08-phonebook/static/js/main.3aeb7015.js",
+    "main.js": "/goit-react-hw-08-phonebook/static/js/main.bc505f29.js",
     "static/js/798.990cd1e2.chunk.js": "/goit-react-hw-08-phonebook/static/js/798.990cd1e2.chunk.js",
-    "static/js/35.251b7120.chunk.js": "/goit-react-hw-08-phonebook/static/js/35.251b7120.chunk.js",
+    "static/js/35.f94b1774.chunk.js": "/goit-react-hw-08-phonebook/static/js/35.f94b1774.chunk.js",
     "static/js/643.107ebecf.chunk.js": "/goit-react-hw-08-phonebook/static/js/643.107ebecf.chunk.js",
     "static/js/427.1f176ee5.chunk.js": "/goit-react-hw-08-phonebook/static/js/427.1f176ee5.chunk.js",
     "static/js/73.7200e5d9.chunk.js": "/goit-react-hw-08-phonebook/static/js/73.7200e5d9.chunk.js",
@@ -12,9 +12,9 @@
     "static/js/705.a9d6fb25.chunk.js": "/goit-react-hw-08-phonebook/static/js/705.a9d6fb25.chunk.js",
     "index.html": "/goit-react-hw-08-phonebook/index.html",
     "main.7acaea2f.css.map": "/goit-react-hw-08-phonebook/static/css/main.7acaea2f.css.map",
-    "main.3aeb7015.js.map": "/goit-react-hw-08-phonebook/static/js/main.3aeb7015.js.map",
+    "main.bc505f29.js.map": "/goit-react-hw-08-phonebook/static/js/main.bc505f29.js.map",
     "798.990cd1e2.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/798.990cd1e2.chunk.js.map",
-    "35.251b7120.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/35.251b7120.chunk.js.map",
+    "35.f94b1774.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/35.f94b1774.chunk.js.map",
     "643.107ebecf.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/643.107ebecf.chunk.js.map",
     "427.1f176ee5.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/427.1f176ee5.chunk.js.map",
     "73.7200e5d9.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/73.7200e5d9.chunk.js.map",
@@ -24,6 +24,6 @@
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.3aeb7015.js"
+    "static/js/main.bc505f29.js"
   ]
 }
