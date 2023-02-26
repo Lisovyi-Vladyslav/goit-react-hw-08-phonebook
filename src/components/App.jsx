@@ -2,7 +2,7 @@ import {useDispatch, useSelector} from 'react-redux';
 import { lazy, useEffect } from 'react';
 import { fetchContacts } from 'redux/users/users.operations';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { selectAuthToken } from 'redux/auth/auth.selector';
+import { selectAuthData } from 'redux/auth/auth.selector';
 import { PublicRoute } from './AuthRouts/PublicRoute';
 import { PrivateRoute } from './AuthRouts/PrivateRoute';
 
@@ -16,7 +16,8 @@ const NotFound = lazy(() => import("pages/NotFound/NotFound"));
 
 
 export function App() {
-  const data = useSelector(selectAuthToken);
+  
+  const data = useSelector(selectAuthData);
   const dispatch = useDispatch();
   useEffect(() => {
    if (data) {

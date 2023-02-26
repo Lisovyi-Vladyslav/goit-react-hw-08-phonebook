@@ -1,11 +1,11 @@
 import React from 'react'
 import { Outlet, Link  } from "react-router-dom";
 import { Suspense } from "react";
-import { selectAuthToken } from 'redux/auth/auth.selector';
+import { selectAuthData } from 'redux/auth/auth.selector';
 import { useSelector } from 'react-redux';
 
 export default function SharedLayout() {
-  const token = useSelector(selectAuthToken);
+  const token = useSelector(selectAuthData);
   
   return (
       <>

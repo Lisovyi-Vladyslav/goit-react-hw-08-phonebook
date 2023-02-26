@@ -17,8 +17,7 @@ const authSlice = createSlice({
     
     }).addCase(authLoginThunk.fulfilled, (state, { payload }) => {
     
-      state.data.user = { name: null, email: null };
-        state.data.token = null;
+      state.data = payload;
     }).addCase(authLoginThunk.rejected, state => {
     
     }).addCase(authgetInfoThunk.pending, state => {
@@ -29,8 +28,8 @@ const authSlice = createSlice({
     }).addCase(authgetInfoThunk.rejected, state => {
     
     }).addCase(authLogOutThunk.fulfilled, (state, action) => {
-        state.data.user = { name: null, email: null };
-        state.data.token = null;
+       
+        state.data = null;
         
       })
   },
@@ -41,7 +40,6 @@ export const { logoutAction } = authSlice.actions;
 const persistConfig = {
   key: 'auth',
   storage,
-  whitelist: ['data']
 };
 
 export const authReducer = persistReducer(persistConfig, authSlice.reducer);
