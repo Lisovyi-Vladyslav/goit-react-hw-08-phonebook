@@ -10,7 +10,7 @@ export default function UserMenu() {
   const navigate = useNavigate();
 
   const Logout = () => {
-    console.log('sgrrfg')
+    
     dispatch(authLogOutThunk())
     navigate('/login', { replace: true });
  }

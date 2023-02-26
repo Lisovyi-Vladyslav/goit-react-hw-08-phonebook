@@ -11,7 +11,7 @@ const clearAuthHeader = () => {
 
 export const authLoginThunk = createAsyncThunk('login', async (values) => {
   const { data } = await publicApi.post('/users/login', values);
-  console.log(data.token)
+ 
  setAuthHeader(data.token)
   return data;
 });
@@ -23,7 +23,7 @@ export const authgetInfoThunk = createAsyncThunk('getInfo', async () => {
 
 export const authLogOutThunk = createAsyncThunk('logOut', async () => {
  await privateApi.post('/users/logout');
-console.log('gsgsdg')
+
   clearAuthHeader();
   
 });
