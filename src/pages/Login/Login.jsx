@@ -39,7 +39,7 @@ useEffect(() => {
   return (
     <>
      <form onSubmit={handleSubmit(onSubmit)}>
-      <h2>Register</h2>
+      <h2>Login</h2>
       <div>
        <label htmlFor="email">Email</label>
       <input name="email" {...register("email")} type="text" />
