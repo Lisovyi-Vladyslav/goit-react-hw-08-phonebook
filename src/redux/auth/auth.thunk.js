@@ -21,10 +21,10 @@ export const authgetInfoThunk = createAsyncThunk('getInfo', async () => {
   return data;
 });
 
-export const authLogOutThunk = createAsyncThunk('logOut', async () => {
+export const authLogOutThunk = createAsyncThunk('logOut', async (token) => {
  
   // const { token } = useSelector(selectAuthData);
-  // setAuthHeader(token)
+  setAuthHeader(token)
  console.log("ssss")
   await privateApi.post('/users/logout');
   clearAuthHeader();
