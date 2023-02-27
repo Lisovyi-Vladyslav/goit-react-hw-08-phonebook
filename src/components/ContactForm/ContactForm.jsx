@@ -1,12 +1,21 @@
 import { Formik, Form, Field, ErrorMessage } from 'formik';
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { addContact  } from "redux/users/users.operations";
+import { getTasks } from 'redux/users/users.selectors';
 
 export const ContactForm = () => {
     const dispatch = useDispatch();
-
+  const contacts = useSelector(getTasks);
+  
   const handleSubmit = (values, actions) => {
-      actions.resetForm();
+    actions.resetForm();
+    
+const names = contacts.map(contact => contact.name);
+    if (names.indexOf(values.name) >= 0) {
+			alert(values.name + " is already in contacts.");
+			return;
+		}
+
       dispatch(
       addContact(values) ,
     );
