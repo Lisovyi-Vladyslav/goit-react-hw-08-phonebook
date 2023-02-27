@@ -9,7 +9,8 @@ export const ContactForm = () => {
   
   const handleSubmit = (values, actions) => {
     actions.resetForm();
-    
+    console.log(values.name)
+    console.log(contacts)
 const names = contacts.map(contact => contact.name);
     if (names.indexOf(values.name) >= 0) {
 			alert(values.name + " is already in contacts.");
