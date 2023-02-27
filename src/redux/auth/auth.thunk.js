@@ -1,10 +1,7 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import { useSelector } from 'react-redux';
 import { privateApi, publicApi } from '../../http/http';
-import { selectAuthData } from './auth.selector';
 
-
-const setAuthHeader = token => {
+export const setAuthHeader = token => {
   privateApi.defaults.headers.common.Authorization = `Bearer ${token}`;
 };
 
@@ -26,9 +23,9 @@ export const authgetInfoThunk = createAsyncThunk('getInfo', async () => {
 
 export const authLogOutThunk = createAsyncThunk('logOut', async () => {
  
-  const { token } = useSelector(selectAuthData);
-  setAuthHeader(token)
- 
+  // const { token } = useSelector(selectAuthData);
+  // setAuthHeader(token)
+ console.log("ssss")
   await privateApi.post('/users/logout');
   clearAuthHeader();
   

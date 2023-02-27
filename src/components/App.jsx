@@ -21,7 +21,7 @@ export function App() {
   const dispatch = useDispatch();
   useEffect(() => {
    if (data) {
-     dispatch(fetchContacts());
+     dispatch(fetchContacts(data.token));
    } 
   }, [dispatch, data]);
 

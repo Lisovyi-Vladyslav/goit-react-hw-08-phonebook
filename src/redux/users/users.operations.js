@@ -1,12 +1,16 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import { privateApi } from "http/http";
+import { setAuthHeader } from "redux/auth/auth.thunk";
 
 export const fetchContacts  = createAsyncThunk(
   "contacts/fetchAll",
-  async (_, thunkAPI) => {
+  async (token, thunkAPI) => {
     try {
+      setAuthHeader(token)
+       console.log(token) 
+
         const response = await privateApi.get("/contacts");
-       
+    
       return response.data;
     } catch (e) {
       return thunkAPI.rejectWithValue(e.message);
